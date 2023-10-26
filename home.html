@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uneed</title>
-<style>
+    <style>
         *{
             margin: 0px;
             padding: 0px;
@@ -24,7 +24,7 @@
             background-color: #00000062;
             font-family: "Raleway";
             font-weight: bold;
-            box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.74);
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.521);
         }
         body{
             font-family: "roboto";
@@ -33,10 +33,15 @@
             left: 0px;
             top: 0px;
             width: 100%;
-            height: 500px;
+            height: 600px;
         }
         h1{
-            color:black;   
+            color:black; 
+            font-family: "Raleway";  
+        }
+        p{
+            color:black; 
+            font-family:'Times New Roman', Times, serif;
         }
         h3{
             color:#027bcc;   
@@ -112,7 +117,7 @@
         }
         .home{
             display: flex;
-            top: 520px;
+            top: 500px;
             height: 2300px;
             width: 100vw;
             color:black; 
@@ -121,7 +126,7 @@
             flex-direction: column;
         }
         .whyUs{
-            background-color: #ffffff;
+            background-color: #CACACA;
             height: 500px;
             width: 100vw;
             display: flex;
@@ -129,23 +134,49 @@
             flex-direction: column;
         }
         .appInfo{
-            background-color: #88a7bb;
+            background-color: #027bcc;
             height: 500px;
             width: 100vw;
             display: flex;
+        }
+        .AppGauche{
+            background-color: #027bcc;
+            width: 30%;
+            display: flex;
             align-items: center;
+            flex-direction: column;
+        }
+        .phone1{
+            width: 250px; 
+        }
+        .AppDroite{
+            background-color: #027bcc;
+            width: 70%;
+            display: flex;
+            align-items: center; 
             flex-direction: column;  
         }
         .download{
             background-color: #ffffff;
-            height: 200px;
+            height: 250px;
             width: 100vw;
             display: flex;
             align-items: center;
             flex-direction: column;    
         }
+        .downloadImg{
+            background-color: #ffffff;
+            height: 200px;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .downAnd ,.downIos{
+            width: 250px; 
+        }
         .review{
-            background-color: #b4a8a8;
+            background-color:#00747C;
             height: 400px;
             width: 100vw;
             display: flex;
@@ -160,7 +191,7 @@
             align-items: center;
             flex-direction: column;   
         }
-</style>
+    </style>
 </head>
 <body>
     <!--l'entete-->
@@ -168,35 +199,45 @@
         <h3 class="logo">UNEED</h3>
         <div class="navMenu">
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="home.html">Why choose us</a></li>
-                <li><a href="home.html">App information</a></li>
+                <li><a href="">Home</a></li>
+                <li><a class="WhyCUs">Why choose us</a></li>
+                <li><a class="Appfo">App information</a></li>
                 <li><a href="about.html">About us</a></li>
-                <li><a href="home.html">Contact us</a></li>
-                <li><a href="home.html">Download</a></li>
+                <li><a class="ContactU">Contact us</a></li>
+                <li><a class="Downl">Download</a></li>
             </ul>
         </div>
         <img src="Image/Hamburger_icon.png" alt="Menu" class="menuHam" id="menuHam" onclick="menuHam">
     </nav>
     <!--Section Logo A CHANGER -------------------------------------------------------------->
-    <img class="imagePrinc" src="Image/Village1.jpg" alt="Village Logo">
+    <img class="imagePrinc" src="Image/Village3.jpg" alt="Village Logo">
 
     <!--Page d'accueil-->
-    <div class="home">
+    <div class="home" id="home">
         
         <!--Section Why choose us-->
-        <div class="whyUs">
+        <div class="whyUs" id="whyUs">
             <h1>Why choose us</h1>
         </div>
 
         <!--Section App information-->
-        <div class="appInfo">
-            <h1>App information</h1>
+        <div class="appInfo" id="appInfo">
+            <div class="AppGauche">
+                <img src="Image/Phone.png" alt="Phone" class="phone1">
+            </div>
+            <div class="AppDroite">
+                <h1>App information</h1>
+                <p>Coming soon</p>
+            </div>
         </div>
 
         <!--Section Download-->
-        <div class="download">
+        <div class="download" id="download">
             <h1>Download</h1>
+            <div class="downloadImg">
+                <img src="Image/downloadIOS.png" alt="Download in Ios" class="downIos">
+                <img src="Image/downloadAndroid.png" alt="Download in Android" class="downAnd">
+            </div>
         </div>
 
         <!--Section Review-->
@@ -205,19 +246,21 @@
         </div>   
 
         <!--Section Contact us-->
-        <div class="contactUs">
+        <div class="contactUs" id="contactUs">
             <h1>Contact us</h1>
         </div>         
     </div>
 </body>
     <script>
+        // Entete pour le téléphone
         const menuHamburger = document.querySelector(".menuHam")
         const navMenu = document.querySelector(".navMenu")
  
         menuHamburger.addEventListener('click',()=>{
             navMenu.classList.toggle('mobileMenu')
         })
-
+        
+        // Change la couleur de l'entete
         window.addEventListener('scroll', function() {
     	    var menuAppear = document.getElementById('menubar');
     	    var triggerPosition = menuAppear.offsetTop - window.innerHeight; 
@@ -226,5 +269,37 @@
         	    menuAppear.style.background = "White";
     	    }
 	    });
+
+        // Trouve les pages
+        const whyus = document.querySelector(".WhyCUs")
+        const appinfo = document.querySelector(".Appfo")
+        const contactus = document.querySelector(".ContactU")
+        const downlo = document.querySelector(".Downl")
+
+        whyus.addEventListener('click',()=>{
+            window.scrollTo({
+                top: 500,
+                behavior: "smooth"
+            })
+        })
+        appinfo.addEventListener('click',()=>{
+            window.scrollTo({
+                top: 1000,
+                behavior: "smooth"
+            })
+        })
+        contactus.addEventListener('click',()=>{
+            window.scrollTo({
+                top: 2100,
+                behavior: "smooth"
+            })
+        })
+        downlo.addEventListener('click',()=>{
+            window.scrollTo({
+                top: 1500,
+                behavior: "smooth"
+            })
+        })
+
     </script>
 </html>
