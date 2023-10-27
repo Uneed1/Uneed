@@ -11,6 +11,8 @@
             list-style: none;
             text-decoration: none;
         }
+
+        /*-- Text & image --*/
         a{
             color: #000000;
             font-family: "Raleway";
@@ -42,10 +44,13 @@
         p{
             color:black; 
             font-family:'Times New Roman', Times, serif;
+            font-size: 0.5em;
         }
         h3{
             color:#027bcc;   
         }
+
+        /*-- Menu --*/
         .menubar{
             position: fixed;
             padding: 30px;
@@ -75,6 +80,8 @@
             right: 50px;
             top: 35px;
         }
+
+        /*-- Menu petit --*/
         @media screen and (max-width:1170px){
             .menubar {
                 padding: 0;
@@ -115,6 +122,8 @@
             font-size: 1.5em;  
             }
         }
+
+        /*-- Page // Section --*/
         .home{
             display: flex;
             top: 500px;
@@ -183,13 +192,70 @@
             align-items: center;
             flex-direction: column; 
         }
+
+        /*-- Contact --*/
         .contactUs{
-            background-color: #ffffff;
+
+            background-color: #CACACA;
             height: 600px;
             width: 100vw;
+            padding: 100px 0; 
             display: flex;
             align-items: center;
             flex-direction: column;   
+        }
+        .contactform{
+            background-color: #ffffff;
+            max-width: 1100px;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10px;
+            border-radius: 15px;
+            box-sizing: border-box;
+            box-shadow: 0px 10px 50px -10px ffffff;
+        }
+        .contactform form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 900px;
+        }
+        .contactform form input{
+            width: 45%;
+        }
+        .contactform form textarea{
+            width: 100%;
+            resize: none;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        .contactform form input,textarea{
+            margin: 15px 15px;
+            padding: 10px 0;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #bfe5ff;
+            box-sizing: border-box;
+            transition: 0.2s;
+        }
+        .contactform form input:hover{
+            border-bottom: 2px solid #027bcc;
+        }
+        .contactform form textarea:hover{
+            border-bottom: 2px solid #027bcc;
+        }
+        .contactform form button{
+            color: #ffffff;
+            background-color: #027bcc;
+            font-family: "Raleway";
+            font-weight: bold;
+            border: #ffffff;
+            border-radius: 5px;
+            padding: 10px 18px;
+            margin: 0px 15px;
         }
     </style>
 </head>
@@ -218,6 +284,7 @@
         <!--Section Why choose us-->
         <div class="whyUs" id="whyUs">
             <h1>Why choose us</h1>
+            <p>Coming soon...</p>
         </div>
 
         <!--Section App information-->
@@ -227,7 +294,7 @@
             </div>
             <div class="AppDroite">
                 <h1>App information</h1>
-                <p>Coming soon</p>
+                <p>Coming soon...</p>
             </div>
         </div>
 
@@ -243,11 +310,22 @@
         <!--Section Review-->
         <div class="review">
             <h1>Review</h1>
+            <p>Coming soon...</p>
         </div>   
 
         <!--Section Contact us-->
         <div class="contactUs" id="contactUs">
-            <h1>Contact us</h1>
+            <div class="contactform" id="contactform">
+                <h1>Contact us</h1>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Name" required="">
+                    <input type="email" name="email" placeholder="E-mail" required="">
+                    <input type="text" name="number" placeholder="Phone number" required="">
+                    <input type="text" name="Subject" placeholder="Subject" required="">
+                    <textarea name="message" id="messageAr" placeholder="Message"></textarea>
+                    <button type="submit">Summit</button>
+                </form>
+            </div>
         </div>         
     </div>
 </body>
@@ -284,7 +362,7 @@
         })
         appinfo.addEventListener('click',()=>{
             window.scrollTo({
-                top: 1000,
+                top: 940,
                 behavior: "smooth"
             })
         })
@@ -296,7 +374,7 @@
         })
         downlo.addEventListener('click',()=>{
             window.scrollTo({
-                top: 1500,
+                top: 1440,
                 behavior: "smooth"
             })
         })
