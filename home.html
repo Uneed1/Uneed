@@ -329,55 +329,55 @@
         </div>         
     </div>
 </body>
-    <script>
-        // Entete pour le téléphone
-        const menuHamburger = document.querySelector(".menuHam")
-        const navMenu = document.querySelector(".navMenu")
+<script>
+    // Entete pour le téléphone
+    const menuHamburger = document.querySelector(".menuHam")
+    const navMenu = document.querySelector(".navMenu")
  
-        menuHamburger.addEventListener('click',()=>{
-            navMenu.classList.toggle('mobileMenu')
-        })
+    menuHamburger.addEventListener('click',()=>{
+        navMenu.classList.toggle('mobileMenu')
+    })
         
-        // Change la couleur de l'entete
-        window.addEventListener('scroll', function() {
-    	    var menuAppear = document.getElementById('menubar');
-    	    var triggerPosition = menuAppear.offsetTop - window.innerHeight; 
+    // Change la couleur de l'entete
+    window.addEventListener('scroll', function() {
+    	var menuAppear = document.getElementById('menubar');
+    	var triggerPosition = menuAppear.offsetTop - window.innerHeight; 
 
-    	    if (window.pageYOffset > triggerPosition) {
-        	    menuAppear.style.background = "White";
-    	    }
-	    });
+    	if (window.pageYOffset > triggerPosition) {
+        	menuAppear.style.background = "White";
+    	}
+	});
 
-        // Trouve les pages
-        const whyus = document.querySelector(".WhyCUs")
-        const appinfo = document.querySelector(".Appfo")
-        const contactus = document.querySelector(".ContactU")
-        const downlo = document.querySelector(".Downl")
+    // Trouve les pages
+    const whyus = document.querySelector(".WhyCUs")
+    const appinfo = document.querySelector(".Appfo")
+    const contactus = document.querySelector(".ContactU")
+    const downlo = document.querySelector(".Downl")
 
-        whyus.addEventListener('click',()=>{
-            window.scrollTo({
-                top: 500,
-                behavior: "smooth"
-            })
+    whyus.addEventListener('click',()=>{
+        window.scrollTo({
+            top: 500,
+            behavior: "smooth"
         })
-        appinfo.addEventListener('click',()=>{
-            window.scrollTo({
-                top: 940,
-                behavior: "smooth"
-            })
+    })
+    appinfo.addEventListener('click',()=>{
+        window.scrollTo({
+            top: 940,
+            behavior: "smooth"
         })
-        contactus.addEventListener('click',()=>{
-            window.scrollTo({
-                top: 2100,
-                behavior: "smooth"
-            })
+    })
+    contactus.addEventListener('click',()=>{
+        window.scrollTo({
+            top: 2100,
+            behavior: "smooth"
         })
-        downlo.addEventListener('click',()=>{
-            window.scrollTo({
-                top: 1440,
-                behavior: "smooth"
-            })
+    })
+    downlo.addEventListener('click',()=>{
+        window.scrollTo({
+            top: 1440,
+            behavior: "smooth"
         })
+    })
 
-    </script>
+</script>
 </html>
