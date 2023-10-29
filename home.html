@@ -59,6 +59,7 @@
             width: 100%;
             box-sizing: border-box;
             align-items: center;
+            background-color: rgba(0, 0, 0, 0);
         }
         .menubar h3{
             font-size: 2em;
@@ -167,7 +168,7 @@
         }
         .download{
             background-color: #ffffff;
-            height: 250px;
+            height: 400px;
             width: 100vw;
             display: flex;
             align-items: center;
@@ -208,7 +209,7 @@
             padding: 100px 0; 
             display: flex;
             align-items: center;
-            flex-direction: column;   
+            flex-direction: column;  
         }
         .contactform{
             background-color: #ffffff;
@@ -219,7 +220,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 30px 10px;
-            border-radius: 15px;
+            border-radius: 10px;
             box-sizing: border-box;
             box-shadow: 0px 10px 50px -10px ffffff;
         }
@@ -263,6 +264,7 @@
             padding: 10px 18px;
             margin: 0px 15px;
         }
+        
     </style>
 </head>
 <body>
@@ -330,7 +332,7 @@
                     <input type="text" name="number" placeholder="Phone number" required="">
                     <input type="text" name="Subject" placeholder="Subject" required="">
                     <textarea name="message" id="messageAr" placeholder="Message"></textarea>
-                    <button type="submit">Summit</button>
+                    <button type="submit">Submit</button>
                 </form>
             </div>
         </div>         
@@ -348,11 +350,15 @@
     // Change la couleur de l'entete
     window.addEventListener('scroll', function() {
     	var menuAppear = document.getElementById('menubar');
-    	var triggerPosition = menuAppear.offsetTop - window.innerHeight; 
+    	var triggerPosition = 1; 
 
-    	if (window.pageYOffset > triggerPosition) {
-        	menuAppear.style.background = "White";
-    	}
+        if (window.pageYOffset > triggerPosition) {
+        menuAppear.style.backgroundColor = "white";
+        } 
+        else {
+        menuAppear.style.backgroundColor = "transparent";
+        }
+
 	});
 
     // Trouve les pages
