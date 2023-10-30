@@ -7,7 +7,10 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
         <link rel="stylesheet" href="https://learn.microsoft.com/en-us/typography/font-list/segoe-ui">
         <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto?query=roboto">
-    <style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400;700&display=swap" rel="stylesheet">
+<style>
         *{
             margin: 0px;
             padding: 0px;
@@ -18,18 +21,16 @@
         /*-- Text & image --*/
         a{
             color: #000000;
-            font-family: "Segoe UI";
-            font-weight: normal;
+            font-family: 'Wix Madefor Text', sans-serif;            font-weight: normal;
             border-radius: 5px;
             padding: 10px 15px;
             transition: 150ms;
         }
         a:hover{
-            color: #ffffff;
-            background-color: #00000062;
-            font-family: "Segoe UI";
-            font-weight: normal;
-            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.521);
+            color: white;
+            background-color: #00000069;
+            font-family: 'Wix Madefor Text', sans-serif;            font-weight: normal;
+            border-radius: 200px;
         }
         body{
             font-family: "roboto";
@@ -40,11 +41,24 @@
             width: 100vw;
             height: 600px;
         }
+
+        /*-- h1 tags --*/
         h1{
             color:black; 
-            font-family: "Segoe UI"; 
+            font-family: 'Wix Madefor Text', sans-serif;
             font-weight: bold; 
+            font-size: 2.5em;
+            margin-top: 75px;
         }
+        .why{
+            color: white;
+        }
+        .contact{
+            font-size: 1em;
+            margin-top: auto;
+        }
+
+
         p{
             color:black; 
             font-family:"roboto";
@@ -52,13 +66,13 @@
         }
         h3{
             color:#027bcc;   
-            font-family: "Raleway";
+            font-family: 'Wix Madefor Text', sans-serif;
         }
 
         /*-- Menu --*/
         .menubar{
             position: fixed;
-            padding: 30px;
+            padding: 15px;
             display: flex;
             justify-content: space-between;
             width: 100%;
@@ -76,7 +90,7 @@
         .menubar .navMenu ul li{
             margin: 0 20px;
             font-family: sans-serif;
-            font-size: 1.2em;
+            font-size: 1.1em;
             color: black; 
         }
         .menubar .menuHam{
@@ -141,21 +155,21 @@
             flex-direction: column;
         }
         .whyUs{
-            background-color: #CACACA;
-            height: 500px;
+            background-color: #027bcc;
+            height: 750px;
             width: 100vw;
             display: flex;
             align-items: center;
             flex-direction: column;
         }
         .appInfo{
-            background-color: #027bcc;
+            background-color: white;
             height: 500px;
             width: 100vw;
             display: flex;
         }
         .AppGauche{
-            background-color: #027bcc;
+            background-color: white;
             width: 30%;
             display: flex;
             align-items: center;
@@ -165,14 +179,14 @@
             width: 250px; 
         }
         .AppDroite{
-            background-color: #027bcc;
+            background-color: white;
             width: 70%;
             display: flex;
             align-items: center; 
             flex-direction: column;  
         }
         .download{
-            background-color: #ffffff;
+            background-color: white;
             height: 400px;
             width: 100vw;
             display: flex;
@@ -180,7 +194,7 @@
             flex-direction: column;    
         }
         .downloadImg{
-            background-color: #ffffff;
+            background-color: white;
             height: 200px;
             width: 100vw;
             display: flex;
@@ -197,7 +211,7 @@
             width: 250px; 
         }
         .review{
-            background-color:#00747C;
+            background-color:#ab8df1;
             height: 400px;
             width: 100vw;
             display: flex;
@@ -209,7 +223,7 @@
         .contactUs{
 
             background-color: #CACACA;
-            height: 600px;
+            height: 500px;
             width: 100vw;
             padding: 100px 0; 
             display: flex;
@@ -262,10 +276,10 @@
         .contactform form button{
             color: #ffffff;
             background-color: #027bcc;
-            font-family: "Raleway";
+            font-family: 'Wix Madefor Text', sans-serif;
             font-weight: bold;
             border: #ffffff;
-            border-radius: 5px;
+            border-radius: 100px;
             padding: 10px 18px;
             margin: 0px 15px;
         }
@@ -274,12 +288,12 @@
 <body>
     <!--l'entete-->
     <nav class="menubar" id="menubar">
-        <h3 class="logo">UNEED</h3>
+        <h3 class="logo">Uneed</h3>
         <div class="navMenu">
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a class="WhyCUs">Why choose us</a></li>
-                <li><a class="Appfo">App information</a></li>
+                <li><a class="WhyCUs">Why use Uneed</a></li>
+                <li><a class="Appfo">How Uneed works</a></li>
                 <li><a href="about.html">About us</a></li>
                 <li><a class="ContactU">Contact us</a></li>
                 <li><a class="Downl">Download</a></li>
@@ -293,19 +307,19 @@
     <!--Page d'accueil-->
     <div class="home" id="home">
         
-        <!--Section Why choose us-->
+        <!--Section Why use Uneed-->
         <div class="whyUs" id="whyUs">
-            <h1>Why choose us?</h1>
+            <h1 class="why">Why use Uneed</h1>
             <p>Coming soon...</p>
         </div>
 
-        <!--Section App information-->
+        <!--Section How Uneed works-->
         <div class="appInfo" id="appInfo">
             <div class="AppGauche">
                 <img src="Image/Phone.png" alt="Phone" class="phone1">
             </div>
             <div class="AppDroite">
-                <h1>App information</h1>
+                <h1>How Uneed works</h1>
                 <p>Coming soon...</p>
             </div>
         </div>
@@ -322,14 +336,14 @@
 
         <!--Section Review-->
         <div class="review">
-            <h1>Review</h1>
+            <h1>Ratings and reviews</h1>
             <p>Coming soon...</p>
         </div>   
 
         <!--Section Contact us-->
         <div class="contactUs" id="contactUs">
             <div class="contactform" id="contactform">
-                <h1>Contact us</h1>
+                <h1 class="contact">Contact us</h1>
                 <form action="#" method="post">
                     <input type="text" name="name" placeholder="Name" required="">
                     <input type="email" name="email" placeholder="E-mail" required="">
@@ -395,6 +409,5 @@
             behavior: "smooth"
         })
     })
-
 </script>
 </html>
