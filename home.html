@@ -161,6 +161,25 @@
             align-items: center;
             flex-direction: column;
         }
+        .slide{
+            position: relative;
+            height: 100px;
+            width: 70%;
+        }
+        .slideBtn{
+            position: absolute;
+        }
+        .slideImage{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            overflow: hidden;
+            scroll-behavior: smooth;
+        }
+        .slideImg{
+            height: 100%;
+            min-width: 100%;
+        }
         .appInfo{
             background-color: #027bcc;
             height: 500px;
@@ -310,6 +329,23 @@
         <div class="whyUs" id="whyUs">
             <h1 class="why">Why use Uneed</h1>
             <p>Coming soon...</p>
+            <div class="slide">
+                <div class="slideBtn">
+                    <button onclick="slideP()" class="slideBtnP">Previous</button>
+                    <button onclick="slideN()" class="slideBtnN">Next</button>
+                </div>
+                <div class="slideImage">
+                    <div class="slideImg">
+                        <p>Best App 1</p>
+                    </div>
+                    <div class="slideImg">
+                        <p>Best App 2</p>
+                    </div>
+                    <div class="slideImg">
+                        <p>Best App 3</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!--Section How Uneed works-->
@@ -408,5 +444,14 @@
             behavior: "smooth"
         })
     })
+
+    function slideP(){
+        const slidenext = document.querySelector(".slide").offsetWidth;
+        document.querySelector(".slideImage").scrollLeft -=slidenext; 
+    }
+    function slideN(){
+        const slidenext = document.querySelector(".slide").offsetWidth;
+        document.querySelector(".slideImage").scrollLeft +=slidenext;
+    }
 </script>
 </html>
