@@ -21,7 +21,8 @@
         /*-- Text & image --*/
         a{
             color: #000000;
-            font-family: 'Wix Madefor Text', sans-serif;            font-weight: normal;
+            font-family: 'Wix Madefor Text', sans-serif;            
+            font-weight: normal;
             border-radius: 5px;
             padding: 10px 15px;
             transition: 150ms;
@@ -29,7 +30,8 @@
         a:hover{
             color: white;
             background-color: #00000069;
-            font-family: 'Wix Madefor Text', sans-serif;            font-weight: normal;
+            font-family: 'Wix Madefor Text', sans-serif;            
+            font-weight: normal;
             border-radius: 200px;
         }
         body{
@@ -39,6 +41,13 @@
             left: 0px;
             top: 0px;
             width: 100%;
+        }
+        .logoImg{
+            position: absolute;
+            z-index: 1;
+            left: 60%;
+            top: 200px;
+            width: 300px;
         }
         .BlueImg{
             left: 0px;
@@ -88,6 +97,7 @@
             box-sizing: border-box;
             align-items: center;
             background-color: rgba(0, 0, 0, 0);
+            z-index: 2;
         }
         .menubar h3{
             font-size: 2em;
@@ -114,6 +124,7 @@
         @media screen and (max-width:1170px){
             .menubar {
                 padding: 0;
+                background-color: white;
             }
             .menubar h3{
                 position: absolute;
@@ -178,8 +189,9 @@
             overflow: hidden;
         }
         .slideImage{
-            display: flex; /*Faire quelle chose ici pour le renplacer*/
+            display: flex; 
             animation: slide 23s infinite ease-in-out;
+            z-index: 1;
         }
         .slideImg{
             flex-shrink: 0;
@@ -352,7 +364,7 @@
     </nav>
     <!--Section Logo A CHANGER -------------------------------------------------------------->
     <img class="imagePrinc" src="Image/Uneedpp.png" alt="Village Logo">
-
+    <img class="logoImg" src="Image/logoU.png" alt="U">
     <!--Page d'accueil-->
     <div class="home" id="home">
         
