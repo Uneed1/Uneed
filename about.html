@@ -63,7 +63,13 @@
             font-family: 'Wix Madefor Text', sans-serif;
             margin-left: 20px;
         }
-
+        .u{
+            position: absolute;
+            width: 21px;
+            left: 18px;
+            top: 28px;
+        }
+        
         /*-- Menu --*/
         .menubar{
             position: fixed;
@@ -145,17 +151,31 @@
             align-items: center;
             flex-direction: column;
         }
+        .sousbar{
+            background-color:#5D4E99;
+            height: 70px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column; 
+        }
+        .sousimg{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            width: 20px; 
+        }
 
     </style>
 </head>
 <body>
     <!--l'entete-->
     <nav class="menubar" id="menubar">
-        <h3 class="logo">UNEED</h3>
+        <img class="u" src="Image/U.png" alt="U logo">
+        <h3 class="logo">need</h3>
         <div class="navMenu">
             <ul>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="home.html#whyUs">Why use Uneed</a></li>
+                <li><a href="home.html#whyUs">Why use Uneed?</a></li>
                 <li><a href="home.html#appInfo">How Uneed works</a></li>
                 <li><a href="">About us</a></li>
                 <li><a href="home.html#contactUs">Contact us</a></li>
@@ -177,6 +197,9 @@
         <p>Avery Ng</p>
         <p>Itokiana Solofomalala</p>
 
+    </div>
+    <div class="sousbar">
+        <img class="sousimg" src="Image/Ulogo.png" alt="Uneed">
     </div>
 </body>
 <script>
