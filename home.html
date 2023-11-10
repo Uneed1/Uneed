@@ -46,8 +46,20 @@
             position: absolute;
             z-index: 1;
             left: 15%;
-            top: 200px;
+            top: 160px;
             width: 300px;
+        }
+        .slogan{
+            position: absolute;
+            left: 11%;
+            top: 557px;
+            color: #ffffff;
+            font-family: 'Wix Madefor Text', sans-serif;            
+            font-size: 2em;            
+            font-weight: bold;
+            background-color: #000000b9;
+            border-radius: 200px;
+            padding: 10px 20px;
         }
         .BlueImg{
             left: 0px;
@@ -252,23 +264,28 @@
             flex-direction: column;  
         }
 
-        .espace{
-            height: 200px; 
-            width: 100%;
-            display: flex;
-        }
+     
         .download{
-            background-color: white;
-            height: 200px;                             /*A changer pour que sa ne bouge pas*/
+            height: 600px;
             display: flex;
-            position: absolute;
-            top: 2190px;
-            left: 46%;
+            width: 100%;
+    
+        }
+        .downloadg{
+            width: 30%;
+            display: flex;
             align-items: center;
-            flex-direction: column;    
+            flex-direction: column;
+            background-color: #027bcc;
+        }
+        .downloaddroite{
+            width: 70%;
+            display: flex;
+            align-items: center; 
+            flex-direction: column; 
+            background-image: url(Image/downloadAP.png); 
         }
         .downloadImg{
-            background-color: white;
             height: 200px;
             width: 100%;
             display: flex;
@@ -394,6 +411,7 @@
     <!--Section Logo A CHANGER -------------------------------------------------------------->
     <img class="imagePrinc" src="Image/imagePrinc.png" alt="Village Logo">
     <img class="logoImg" src="Image/Ulogo.png" alt="U">
+    <div class="slogan">You need help go to Uneed</div>
     <!--Page d'accueil-->
     <div class="home" id="home">
         
@@ -432,17 +450,18 @@
                 <p>Coming soon...</p>
             </div>
         </div>
-        <img class="BlueImg" src="Image/ecranBleuD.png" alt="blue">
         <!--Section Download-->
-        <div class="espace"><br></div>
-        <div class="download" id="download">
-            <h1>Download</h1>
-            <div class="downloadImg">
-                <img src="Image/downloadIOS.png" alt="Download in Ios" class="downIos">
-                <img src="Image/downloadAndroid.png" alt="Download in Android" class="downAnd">
+        <div class="download" id="downloada">
+
+            <div class="downloadg"></div>
+            <div class="downloaddroite">
+                <h1>Download</h1>
+                <div class="downloadImg">
+                    <img src="Image/downloadIOS.png" alt="Download in Ios" class="downIos">
+                    <img src="Image/downloadAndroid.png" alt="Download in Android" class="downAnd">
+                </div>
             </div>
         </div>
-        <img class="BlueImg" src="Image/Black.png" alt="Black">
         <!--Section Review-->
         <div class="review">
             <h1>Ratings and reviews</h1>
