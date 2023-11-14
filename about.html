@@ -154,7 +154,7 @@
         }
         .sousbar{
             background-color:#5D4E99;
-            height: 70px;
+            height: 20px;
             width: 100%;
             display: flex;
             align-items: center;
@@ -162,11 +162,57 @@
         }
         .sousimg{
             margin-top: 10px;
-            margin-bottom: 20px;
             width: 20px; 
         }
+	.row {
+		display: grid;
+		grid-template-columns: repeat(5, minmax(0, 1fr));
+		gap: 1rem;
+		padding: 1rem;
+	}
 
+	.card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.card > img {
+		width: 100%;
+		border-radius: 1ch;
+		height: 15rem;
+		object-fit: cover;
+	}
+
+	.links {
+		display: flex;
+	}
+
+
+	@media screen and (max-width: 860px) {
+		.row {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+	footer {
+        background-color: #5D4E99;
+        color: var(--color-light);
+		padding: 0ch;
+		font-size: 0.6em;
+		text-align: center;
+	}
+
+	footer p {
+        background-color: #5D4E99;
+		margin: 0;
+	}
+
+	
+   
     </style>
+
+    
 </head>
 <body>
     <!--l'entete-->
@@ -192,16 +238,111 @@
         <h1>About Us</h1>
 
         <!--Our team-->
-        <p>Nicola Baker</p>
-        <p>Rayan Ketata</p>
-        <p>Mehdi Dahamna</p>
-        <p>Avery Ng</p>
-        <p>Itokiana Solofomalala</p>
+        <div class="row">
+				<div class="card">
+					<img src="Image/Us/nicola.jpg" alt="Nicola Baker" />
+					<h3>Nicola Baker</h3>
+					<div class="links">
+						<a href="mailto:nbake013@uottawa.ca">
+							<img
+								src="https://img.icons8.com/color/48/null/microsoft-outlook-2019--v2.png"
+								alt="Email"
+							/>
+						</a>
+						<a href=" https://github.com/NicolaBaker" target="_blank">
+							<img src="https://img.icons8.com/fluency/48/null/github.png" alt="GitHub" />
+						</a>
+						<a href="https://www.linkedin.com/in/nicola-baker-91874b291/" target="_blank">
+							<img src="https://img.icons8.com/fluency/48/null/linkedin-circled.png" alt="LinkedIn" />
+						</a>
+					</div>
+				</div>
+				<div class="card">
+					<img src="Image/Us/Mehdi.png" alt="Mehdi Dahamna" />
+					<h3>Mehdi Dahamna</h3>
+					<div class="links">
+						<a href="mailto:mdaha098@uottawa.ca">
+							<img
+								src="https://img.icons8.com/color/48/null/microsoft-outlook-2019--v2.png"
+								alt="Email"
+							/>
+						</a>
+						<a href="https://github.com/Mehdidahamna" target="_blank">
+							<img src="https://img.icons8.com/fluency/48/null/github.png" alt="GitHub" />
+						</a>
+						<a href="https://www.linkedin.com/in/mehdi-dahamna-9a0378298/" target="_blank">
+							<img src="https://img.icons8.com/fluency/48/null/linkedin-circled.png" alt="LinkedIn" />
+						</a>
+					</div>
+				</div>
+				<div class="card">
+					<img src="Image/Us/Rayan.png" alt="Rayan Ketata" />
+					<h3>Rayan Ketata</h3>
+					<div class="links">
+						<a href="mailto:rketa044@uottawa.ca">
+							<img
+								src="https://img.icons8.com/color/48/null/microsoft-outlook-2019--v2.png"
+								alt="Email"
+							/>
+						</a>
+						<a href="https://github.com/RayanKetata" target="_blank">
+							<img src="https://img.icons8.com/fluency/48/null/github.png" alt="GitHub" />
+						</a>
+						<a href="https://www.linkedin.com/in/rayan-ketata-3620b9277/" target="_blank">
+							<img src="https://img.icons8.com/fluency/48/null/linkedin-circled.png" alt="LinkedIn" />
+						</a>
+					</div>
+				</div>
+				<div class="card">
+					<img src="/assets/nimetkurnaz.png" alt="Avery Ng" />
+					<h3>Avery Ng</h3>
+					<div class="links">
+						<a href="mailto:ang102@uottawa.ca">
+							<img
+								src="https://img.icons8.com/color/48/null/microsoft-outlook-2019--v2.png"
+								alt="Email"
+							/>
+						</a>
+						<a href="https://github.com/ngavery" target="_blank">
+							<img src="https://img.icons8.com/fluency/48/null/github.png" alt="GitHub" />
+						</a>
+						<a href="https://www.linkedin.com/in/avery-ng-a41168298/" target="_blank">
+							<img src="https://img.icons8.com/fluency/48/null/linkedin-circled.png" alt="LinkedIn" />
+						</a>
+					</div>
+				</div>
+				<div class="card">
+					<img src="/assets/peterbou-farah.png" alt="tokiana Solofomalala" />
+					<h3>Itokiana Solofomalala</h3>
+					<div class="links">
+						<a href="mailto:isolo024@uottawa.ca">
+							<img
+								src="https://img.icons8.com/color/48/null/microsoft-outlook-2019--v2.png"
+								alt="Email"
+							/>
+						</a>
+						<a href="https://github.com/Tokii-Solofomalala" target="_blank">
+							<img src="https://img.icons8.com/fluency/48/null/github.png" alt="GitHub" />
+						</a>
+						<a href="https://www.linkedin.com/in/itokiana-solofomalala-752119241/" target="_blank">
+							<img src="https://img.icons8.com/fluency/48/null/linkedin-circled.png" alt="LinkedIn" />
+						</a>
+					</div>
+				</div>
+			</div>
 
     </div>
     <div class="sousbar">
         <img class="sousimg" src="Image/Ulogo.png" alt="Uneed">
+	
     </div>
+    <footer>
+			<p>
+				Copyright &copy; 2023 Uneed. Designed by <strong>Group 22</strong> for the SEG 2900 course at
+				uOttawa.
+			</p>
+			
+	</footer>
 </body>
 <script>
     // Entete pour le téléphone
