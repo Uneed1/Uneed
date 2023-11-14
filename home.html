@@ -46,31 +46,34 @@
         .logoImg{
             position: absolute;
             z-index: 1;
-            left: 250px;
-            top: 160px;
-            width: 250px;
+            left: 375px;
+            top: 200px;
+            width: 175px;
         }
         .slogan{
             position: absolute;
             left: 220px;
-            top: 500px;
+            top: 450px;
             color: #ffffff;
             font-family: 'Wix Madefor Text', sans-serif;            
-            font-size: 2.1em;            
+            font-size: 3em;            
             font-weight: bold;
             border-radius: 200px;
             padding: 10px 20px;
+            text-shadow: 5px, 5px, 5px, black;
         }
         .slogan2{
             position: absolute;
             left: 165px;
-            top: 550px;
+            top: 500px;
             color: #ffffff;
             font-family: 'Wix Madefor Text', sans-serif;            
-            font-size: 2.1em;            
+            font-size: 3em;            
             font-weight: bold;
             border-radius: 200px;
             padding: 10px 20px;
+            text-shadow: 5px, 5px, 5px, black;
+
         }
         .BlueImg{
             left: 0px;
@@ -258,34 +261,46 @@
         /*-- How Uneed Works --*/
         .appInfo{
             background-color: #027bcc;
-            height: 1000px;
+            height: 2000px;
             width: 100%;
             display: flex;
+        }
+        .AppDroite {
+            height: 1000px;
         }
         .HowUneed {
+            position: center;
             color: white;
+            align-self: center;
         }
-        .AppGauche{
-            background-color: #027bcc;
-            width: 30%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
+        .HowUneed1 {
+            top: 2125px;
+            position: absolute;
+            left: 550px;
+            font-size: 1.2em;
+            color: white;
+            justify-content: center;
+            font-family: 'Wix Madefor text';
+            font-weight: bold
+        }
+        .HowUneed2 {
+            top: 2200px;
+            position: absolute;
+            left: 550px;
+            font-size: 0.8em;
+            color: white;
+            justify-content: center;
+            font-family: "Raleway"
         }
         .phone1{
-            width: 400px;
-            margin-left: 100px; 
-            margin-top: 100px;
-        }
-        .AppDroite{
-            background-color: #027bcc;
-            width: 100%;
-            display: flex;
-            align-items: center; 
-            flex-direction: column;  
+            width: 500px;
+            position: abso;
+            margin-left: 50px; 
+            margin-top: 250px;
         }
 
-     
+
+             /*-- Download --*/
         .download{
             height: 400px;
             display: flex;
@@ -471,7 +486,8 @@
             </div>
             <div class="AppDroite">
                 <h1 class="HowUneed">How Uneed works</h1>
-                <p>Coming soon...</p>
+                <p class="HowUneed1">Choose from dozens of jobs in your area</p>
+                <p class="HowUneed2">Communicate with employers beforehand. See their profile and their ratings. Negotiate prices.</p>
             </div>
         </div>
         <!--Section Download-->
