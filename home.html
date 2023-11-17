@@ -265,17 +265,23 @@
             width: 100%;
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
         .AppDroite {
             height: 1000px;
+            right: 0;
+            width: 100%;
+        }
+        .AppGauche {
+            height: 1000px;   /*-- J'ai faite des changement pour que tout les écrans peuvent le voir --*/
+            left: 0;
+            width: 100%;
         }
         .HowUneed {
-            position: absolute;
             color: white;
-            top: 1600px;
         }
         .HowUneed1 {
-            top: 2175px;
+            top: 2280px;
             position: absolute;
             left: 550px;
             font-size: 1.2em;
@@ -295,17 +301,14 @@
         }
         .phone1{
             width: 500px;
-            position: absolute;
-            margin-left: 50px; 
-            margin-top: 300px;
+            margin-left: 0; 
         }
         .phone2{
             width: 500px;
+            margin-right: 0;
             position: absolute;
-            margin-left: 900px;
-            margin-top: 1000px;
+            right: 0;
         }
-
 
              /*-- Download --*/
         .download{
@@ -524,12 +527,12 @@
 
             <div class="AppGauche">
                 <img src="Image/UNEED1.png" alt="Phone" class="phone1">
-                <img src="Image/UNEED2.png" alt="Phone" class="phone2">
             </div>
             <div class="AppDroite">
     
                 <p class="HowUneed1">Choose from dozens of jobs near you</p>
                 <p class="HowUneed2">Your community is always in need of a helping hand or even an expert on the job.</p>
+                <img src="Image/UNEED2.png" alt="Phone" class="phone2">
             </div>
         </div>
         <!--Section Download-->
@@ -539,8 +542,8 @@
             <div class="downloaddroite">
                 <h1>Download</h1>
                 <div class="downloadImg">
-                    <img src="Image/downloadIOS.png" alt="Download in Ios" download="" class="downIos">
-                    <img src="Image/downloadAndroid.png" alt="Download in Android" download="" class="downAnd">
+                    <img src="Image/downloadIOS.png" alt="Download in Ios" class="downIos">
+                    <img src="Image/downloadAndroid.png" alt="Download in Android" class="downAnd">
                 </div>
             </div>
         </div>
