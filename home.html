@@ -264,6 +264,7 @@
             height: 1900px;
             width: 100%;
             display: flex;
+            flex-direction: column;
         }
         .AppDroite {
             height: 1000px;
@@ -271,7 +272,6 @@
         .HowUneed {
             position: absolute;
             color: white;
-            left: 340px;
             top: 1600px;
         }
         .HowUneed1 {
@@ -360,6 +360,7 @@
             justify-content: center;
             flex-direction: row; 
             width: 90%;
+            padding: 10px;
         }
         .commentaire{
             background-color: white;
@@ -371,7 +372,9 @@
             flex-direction: column;
             padding: 10px;
             margin: 10px;
-
+        }
+        .star{
+           width: 70%;
         }
         .commentaire p{
             color:black; 
@@ -454,8 +457,12 @@
         }
         .sousimg{
             margin-top: 10px;
-            margin-bottom: 20px;
             width: 20px; 
+        }
+        
+        .sousimg p {
+            background-color: #5D4E99;
+            margin-top: 0;
         }
     </style>
 </head>
@@ -513,12 +520,14 @@
         <img class="BlueImg" src="Image/ecranBleu.png" alt="blue">
         <!--Section How Uneed works-->
         <div class="appInfo" id="appInfo">
+            <h1 class="HowUneed">How Uneed works</h1>
+
             <div class="AppGauche">
                 <img src="Image/UNEED1.png" alt="Phone" class="phone1">
                 <img src="Image/UNEED2.png" alt="Phone" class="phone2">
             </div>
             <div class="AppDroite">
-                <h1 class="HowUneed">How Uneed works</h1>
+    
                 <p class="HowUneed1">Choose from dozens of jobs near you</p>
                 <p class="HowUneed2">Your community is always in need of a helping hand or even an expert on the job.</p>
             </div>
@@ -530,8 +539,8 @@
             <div class="downloaddroite">
                 <h1>Download</h1>
                 <div class="downloadImg">
-                    <img src="Image/downloadIOS.png" alt="Download in Ios" class="downIos">
-                    <img src="Image/downloadAndroid.png" alt="Download in Android" class="downAnd">
+                    <img src="Image/downloadIOS.png" alt="Download in Ios" download="" class="downIos">
+                    <img src="Image/downloadAndroid.png" alt="Download in Android" download="" class="downAnd">
                 </div>
             </div>
         </div>
@@ -540,25 +549,26 @@
             <h1>Reviews</h1>
             <div class="Reviewcommentaire">
                 <div class="commentaire">
-                    <img src="Image/5 star trimmed.jpg" alt="star">
-                    <p>
-                        fdgkdlagl kjfrsalfksnlfksdn lasdknfaslks 
-                    </p>
-                    <p>Rayan</p>
+                    <img class="star" src="Image/5-Star.png" alt="star">
+                    <p>Ajoute les commentaires ici.</p>
+                    <h6>-</h6>
+                    <strong><p>Rayan</p></strong>
                 </div>
                 <div class="commentaire" >
-                    <img src="Image/5 star trimmed.jpg" alt="star">
+                    <img class="star" src="Image/5-Star.png" alt="star">
                     <P>
-                        JSkfNS EKSFNJES ENE NFSNF NJFNKSEjf
+                        Ajoute les commentaires ici.
                     </P>
-                    <p>Nicholas</p>
+                    <h6>-</h6>
+                    <strong><p>Nicola</p></strong>
                 </div>
                 <div class="commentaire">
-                    <img src="Image/5 star trimmed.jpg" alt="star">
+                    <img class="star" src="Image/5-Star.png" alt="star">
                     <p>
-                        OMG LOVE THIS
+                        Ajoute les commentaires ici.
                     </p>
-                    <p>Avery</p>
+                    <h6>-</h6>
+                    <strong><p>Avery</p></strong>
                 </div>
             </div>        
         </div>   
@@ -581,6 +591,12 @@
         </div>
         <div class="sousbar">
             <img class="sousimg" src="Image/Ulogo.png" alt="Uneed">
+            <div class="sousbar">
+                <p>
+                    Copyright &copy; 2023 Uneed. Designed by <strong>Group 22</strong> for the SEG 2900 course at
+                    uOttawa.
+                </p>
+            </div>
         </div>         
     </div>
 
