@@ -94,7 +94,7 @@
             font-size: 3em;
             margin-top: 75px;
         }
-        .whyUs h1{
+        .why{
             color:#027bcc; 
             font-family: 'Wix Madefor Text', sans-serif;
             font-weight: bold; 
@@ -106,7 +106,6 @@
             font-size: 1em;
             margin-top: auto;
         }
-
 
         p{
             color:black; 
@@ -157,49 +156,7 @@
             left: 17px;
             top: 26px;
         }
-        /*-- Menu petit --*/
-        @media screen and (max-width:1170px){
-            .menubar {
-                padding: 0;
-                background-color: white;
-            }
-            .menubar h3{
-                position: absolute;
-                top: 30px;
-                left: 50px;
-                font-size: 2em;
-                font-weight: bold;
-            }
-            .navMenu{
-                position: absolute;
-                background-color: rgba(255, 255, 255, 0.253);
-                backdrop-filter: blur(5px);
-                top: 0;
-                left: 0;
-                height: 100vh;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-left: -100%;    
-            }
-            .mobileMenu{
-                margin-left: 0;
-            }   
-            .menubar .menuHam{
-                display: block;
-            }
-            .navMenu ul{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .menubar .navMenu ul li{
-            margin: 25px 0; 
-            font-size: 1.5em;  
-            }
-        }
-
+        
         /*-- Page // Section --*/
         .home{
             display: flex;
@@ -478,7 +435,7 @@
             width: 100%;
             display: flex;
             align-items: center;
-            flex-direction: column; 
+            flex-direction: column;
         }
         .sousimg{
             margin-top: 10px;
@@ -489,6 +446,76 @@
             background-color: #5D4E99;
             margin-top: 0;
         }
+
+        /*Telephone*/
+        @media screen and (max-width:1170px){
+            .menubar {
+                padding: 0;
+                background-color: white;
+            }
+            .menubar h3,.HowUneed3,.HowUneed2{
+                display: none;
+            }
+            .u{
+                display: none;
+            }
+            .HowUneed,h1,.why{
+                font-size: 1.5em;
+            }
+            .commentaire p{
+                font-size: 0.5em;
+            }
+            .logoImg, .slogan , .slogan2{
+                display: none;
+            }
+            .navMenu{
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.253);
+                backdrop-filter: blur(5px);
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: -100%;    
+            }
+            .mobileMenu{
+                margin-left: 0;
+            }   
+            .menubar .menuHam{
+                display: block;
+            }
+            .navMenu ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .menubar .navMenu ul li{
+            margin: 25px 0; 
+            font-size: 1.5em;  
+            }
+            .downAnd ,.downIos{
+                width: 90px;
+                height: auto;
+                padding: 0;
+                margin: 0;
+            }
+            .phone1 ,.phone2{
+                width: 300px;
+                height: auto;
+                padding: 0;
+                margin: 0;
+            }
+            .appInfo{
+                height: 1070px;
+            }
+            .BImg{
+                display: none;
+            }
+        }
+
     </style>
 </head>
 <body>
